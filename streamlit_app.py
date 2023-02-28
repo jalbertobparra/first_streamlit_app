@@ -51,3 +51,10 @@ my_cur.execute("select * from fruit_load_list_2")
 my_data_row = my_cur.fetchone()
 streamlit.text("The fruit list contains")
 streamlit.text(my_data_row)
+
+
+streamlit.header("Fruityvice Fruit Advice 2!")
+fruit_choice2 = streamlit.text_input('What fruit would you like information about 2?','Kiwi')
+streamlit.write('The user entered ', fruit_choice2)
+
+
